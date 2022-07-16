@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/gorilla/mux"
+	"github.com/sizijay/iban-validator/internal/server"
 	"net/http"
 	"time"
 )
@@ -15,7 +16,7 @@ func InitRouter(ctx context.Context) {
 	port := 8081
 
 	//route
-	//router.Handle("/ping", server.Ping()).Methods(http.MethodGet)
+	router.Handle("/ping", methodControl(http.MethodGet, server.Ping()))
 
 	StartServer(ctx, port, router)
 }
@@ -39,7 +40,7 @@ func StartServer(ctx context.Context, port int, r http.Handler) {
 		running <- `done`
 	}(ctx)
 
-	fmt.Printf(`HTTP router started on port [%d]`, port)
+	fmt.Println(fmt.Sprintf(`HTTP router started on port [%d]`, port))
 
 	<-running
 }
@@ -49,5 +50,15 @@ func StopServer(ctx context.Context) {
 		fmt.Printf(`Failed to gracefully shutdown server`)
 	}
 
-	fmt.Printf(`Success! Gracefully shutting down server`)
+	fmt.Println(fmt.Printf(`Success! Gracefully shutting down server`))
+}
+
+func methodControl(method string, h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.Method == method {
+			h.ServeHTTP(w, r)
+		} else {
+			http.Error(w, `Method not allowed`, http.StatusMethodNotAllowed)
+		}
+	})
 }
