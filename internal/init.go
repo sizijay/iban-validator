@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/google/uuid"
+	"github.com/sizijay/iban-validator/config"
 	"github.com/sizijay/iban-validator/internal/http"
 	"os"
 	"os/signal"
@@ -17,6 +18,8 @@ func Init() {
 	tCtx := context.WithValue(context.Background(), "uuid", uuid.New())
 	ctx, cancel := context.WithCancel(tCtx)
 	defer cancel()
+
+	config.LoadConfigurations()
 
 	http.InitRouter(ctx)
 

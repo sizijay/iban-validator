@@ -15,7 +15,7 @@ func PingingEndpoint(pingService domain.Service) endpoint.Endpoint {
 		r, err := pingService.Do(ctx, nil)
 
 		if len(r) == 0 {
-			return response, errors.NewApplicationError("Application Error", errors.ErrPing, string(debug.Stack()))
+			return response, errors.NewApplicationError("Application Error", errors.ErrEmptyResponse, string(debug.Stack()))
 		}
 
 		return r[0], err

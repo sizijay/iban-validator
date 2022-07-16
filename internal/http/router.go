@@ -15,8 +15,11 @@ func InitRouter(ctx context.Context) {
 	router := mux.NewRouter()
 	port := 8081
 
-	//route
+	// ping
 	router.Handle("/ping", methodControl(http.MethodGet, server.Ping()))
+
+	// iban validator
+	router.Handle("/validate/iban", methodControl(http.MethodPost, server.ValidateIBAN()))
 
 	StartServer(ctx, port, router)
 }
@@ -40,13 +43,16 @@ func StartServer(ctx context.Context, port int, r http.Handler) {
 		running <- `done`
 	}(ctx)
 
-	fmt.Println(fmt.Sprintf(`HTTP router started on port [%d]`, port))
+	go func(ctx context.Context) {
+		fmt.Println(http.ListenAndServe(":6069", nil))
+		<- running
+	}(ctx)
 
-	<-running
+	fmt.Println(fmt.Sprintf(`HTTP router started on port [%d]`, port))
 }
 
 func StopServer(ctx context.Context) {
-	if err := httpServer.Shutdown(ctx); err != nil {
+	if err := httpServer.Shutdown(context.Background()); err != nil {
 		fmt.Printf(`Failed to gracefully shutdown server`)
 	}
 
