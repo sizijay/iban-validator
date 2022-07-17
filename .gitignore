@@ -1,0 +1,6 @@
+.idea
+vendor
+go.sum
+iban-validator
+iban_validator
+iban_validator_darwin

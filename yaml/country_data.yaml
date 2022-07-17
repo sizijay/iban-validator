@@ -1,0 +1,304 @@
+#country specific data for IBAN
+
+- code: "AL"
+  country: "Albania"
+  length: 28
+
+- code: "AD"
+  country: "Andorra"
+  length: 24
+
+- code: "AT"
+  country: "Austria"
+  length: 20
+
+- code: "AZ"
+  country: "Azerbaijan"
+  length: 28
+
+- code: "BH"
+  country: "Bahrain"
+  length: 22
+
+- code: "BY"
+  country: "Belarus"
+  length: 28
+
+- code: "BE"
+  country: "Belgium"
+  length: 16
+
+- code: "BA"
+  country: "Bosnia and Herzegovina"
+  length: 20
+
+- code: "BR"
+  country: "Brazil"
+  length: 29
+
+- code: "BG"
+  country: "Bulgaria"
+  length: 22
+
+- code: "CR"
+  country: "Costa Rica"
+  length: 22
+
+- code: "HR"
+  country: "Croatia"
+  length: 21
+
+- code: "CY"
+  country: "Cyprus"
+  length: 28
+
+- code: "CZ"
+  country: "Czech Republic"
+  length: 24
+
+- code: "DK"
+  country: "Denmark"
+  length: 18
+
+- code: "DO"
+  country: "Dominican Republic"
+  length: 28
+
+- code: "TL"
+  country: "East Timor"
+  length: 23
+
+- code: "SV"
+  country: "El Salvador"
+  length: 28
+
+- code: "EE"
+  country: "Estonia"
+  length: 20
+
+- code: "FO"
+  country: "Faroe Islands"
+  length: 18
+
+- code: "FI"
+  country: "Finland"
+  length: 18
+
+- code: "FR"
+  country: "France"
+  length: 27
+
+- code: "GE"
+  country: "Georgia"
+  length: 22
+
+- code: "DE"
+  country: "Germany"
+  length: 22
+
+- code: "GI"
+  country: "Gibraltar"
+  length: 23
+
+- code: "GR"
+  country: "Greece"
+  length: 27
+
+- code: "GL"
+  country: "Greenland"
+  length: 18
+
+- code: "GT"
+  country: "Guatemala"
+  length: 28
+
+- code: "HU"
+  country: "Hungary"
+  length: 28
+
+- code: "IS"
+  country: "Iceland"
+  length: 26
+
+- code: "IQ"
+  country: "Iraq"
+  length: 23
+
+- code: "IE"
+  country: "Ireland"
+  length: 22
+
+- code: "IL"
+  country: "Israel"
+  length: 23
+
+- code: "IT"
+  country: "Italy"
+  length: 27
+
+- code: "JO"
+  country: "Jordan"
+  length: 30
+
+- code: "KZ"
+  country: "Kazakhstan"
+  length: 20
+
+- code: "XK"
+  country: "Kosovo"
+  length: 20
+
+- code: "KW"
+  country: "Kuwait"
+  length: 30
+
+- code: "LV"
+  country: "Latvia"
+  length: 21
+
+- code: "LB"
+  country: "Lebanon"
+  length: 28
+
+- code: "LI"
+  country: "Liechtenstein"
+  length: 21
+
+- code: "LT"
+  country: "Lithuania"
+  length: 20
+
+- code: "LU"
+  country: "Luxembourg"
+  length: 20
+
+- code: "MK"
+  country: "Macedonia"
+  length: 19
+
+- code: "MT"
+  country: "Malta"
+  length: 31
+
+- code: "MR"
+  country: "Mauritania"
+  length: 27
+
+- code: "MU"
+  country: "Mauritius"
+  length: 30
+
+- code: "MC"
+  country: "Monaco"
+  length: 27
+
+- code: "MD"
+  country: "Moldova"
+  length: 24
+
+- code: "ME"
+  country: "Montenegro"
+  length: 22
+
+- code: "NL"
+  country: "Netherlands"
+  length: 18
+
+- code: "NO"
+  country: "Norway"
+  length: 15
+
+- code: "PK"
+  country: "Pakistan"
+  length: 24
+
+- code: "PS"
+  country: "Palestinian territories"
+  length: 29
+
+- code: "PL"
+  country: "Poland"
+  length: 28
+
+- code: "PT"
+  country: "Portugal"
+  length: 25
+
+- code: "QA"
+  country: "Qatar"
+  length: 29
+
+- code: "RO"
+  country: "Romania"
+  length: 24
+
+- code: "LC"
+  country: "Saint Lucia"
+  length: 32
+
+- code: "SM"
+  country: "San Marino"
+  length: 27
+
+- code: "ST"
+  country: "Sao Tome and Principe"
+  length: 25
+
+- code: "SA"
+  country: "Saudi Arabia"
+  length: 24
+
+- code: "RS"
+  country: "Serbia"
+  length: 22
+
+- code: "SC"
+  country: "Seychelles"
+  length: 31
+
+- code: "SK"
+  country: "Slovakia"
+  length: 24
+
+- code: "SI"
+  country: "Slovenia"
+  length: 19
+
+- code: "ES"
+  country: "Spain"
+  length: 24
+
+- code: "SE"
+  country: "Sweden"
+  length: 24
+
+- code: "CH"
+  country: "Switzerland"
+  length: 21
+
+- code: "TN"
+  country: "Tunisia"
+  length: 24
+
+- code: "TR"
+  country: "Turkey"
+  length: 26
+
+- code: "UA"
+  country: "Ukraine"
+  length: 29
+
+- code: "GB"
+  country: "United Kingdom"
+  length: 22
+
+- code: "AE"
+  country: "United Arab Emirates"
+  length: 23
+
+- code: "VG"
+  country: "Virgin Islands, British"
+  length: 24
+
+
+
