@@ -66,6 +66,8 @@ The value will be _false_ otherwise and error responses will be sent accordingly
 
 Configurations are saved in the yaml directory and can be updated with new records easily. Recommended Go version >1.16.
 
+Future Work: Country Specific BBAN validation
+
 ©Sisira Jayawardena
 
 
